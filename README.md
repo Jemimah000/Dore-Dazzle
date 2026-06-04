@@ -1,3 +1,4 @@
+# Dore Dazzle
 # 🧠 Memory Match Game – Flip & Match!
 
 A fun and interactive web-based memory game where players flip cards to find matching pairs. The goal is to match all pairs in the fewest moves and shortest time possible!
