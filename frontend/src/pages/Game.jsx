@@ -18,9 +18,9 @@ const Game = () => {
 
   return (
     <div
+      style={{ backgroundImage: "url('/images/wallpaper-1.jpg')" }}
       className="
         min-h-screen w-full
-        bg-[url('/images/wallpaper-1.jpg')]
         bg-cover bg-center bg-no-repeat
         flex flex-col items-center pt-10
         relative

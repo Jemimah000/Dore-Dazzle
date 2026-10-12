@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
-/* Only required for 3D flip (Tailwind doesn't support these natively) */
+/* ===== CUSTOM UTILITIES ===== */
 @layer utilities {
+
+  /* 🎮 3D FLIP SUPPORT */
   .perspective {
     perspective: 1200px;
   }
@@ -16,5 +18,27 @@
 
   .rotate-y-180 {
     transform: rotateY(180deg);
+  }
+
+  /* ✨ FADE IN (for intro slider) */
+  .animate-fadeIn {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* 💎 OPTIONAL: SOFT GLOW (future use) */
+  .glow-cyan {
+    box-shadow: 0 0 20px rgba(34, 211, 238, 0.6),
+                0 0 40px rgba(34, 211, 238, 0.4);
   }
 }
